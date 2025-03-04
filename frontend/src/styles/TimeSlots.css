@@ -1,0 +1,220 @@
+.timeslots-container {
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.timeslots-container h2 {
+  color: #0d9b33;
+  margin-bottom: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.timeslot-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #0d9b33;
+  box-shadow: 0 0 0 2px rgba(13, 155, 51, 0.1);
+}
+
+.form-group.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-group.checkbox input {
+  width: auto;
+}
+
+.timeslots-list {
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.timeslot-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.timeslot-info {
+  flex: 1;
+}
+
+.timeslot-info h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.timeslot-info p {
+  color: #666;
+  margin: 0.25rem 0;
+}
+
+.timeslot-info strong {
+  color: #333;
+  margin-right: 5px;
+}
+
+.timeslot-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background-color: #0d9b33;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto;
+  min-width: 150px;
+}
+
+.btn:hover {
+  background-color: #0b8a2d;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.btn-icon.edit {
+  color: #0d9b33;
+}
+
+.btn-icon.delete {
+  color: #dc3545;
+}
+
+.btn-icon:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn-secondary {
+  background-color: #dc3545;
+}
+
+.btn-secondary:hover {
+  background-color: #c82333;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #f44336;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.no-timeslots {
+  text-align: center;
+  color: #666;
+  margin: 40px 0;
+  font-style: italic;
+}
+
+/* Header styles */
+header {
+  background-color: #283747;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .timeslots-container {
+    padding: 15px;
+  }
+
+  .form-group {
+    padding: 0 15px;
+  }
+
+  .timeslot-item {
+    flex-direction: column;
+  }
+
+  .timeslot-actions {
+    margin-top: 15px;
+    justify-content: flex-end;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+}
+
+/* Additional styles for better form organization */
+.form-section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+@media (max-width: 480px) {
+  .timeslot-form {
+    padding: 1rem;
+  }
+}

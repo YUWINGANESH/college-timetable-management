@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.home-css {
+  background-image: url("../images/bannari.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  color: #fff;
+  position: relative;
+  padding: 1.25rem;
+}
+
+.home-css p {
+  margin: 0.625rem 0;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.time-css {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 1.25rem;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  margin-right: 0;
+  width: 300px;
+  backdrop-filter: blur(5px);
+}
+
+.time-css p {
+  margin: 0.625rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+  text-align: center;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .time-css {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .home-css {
+    align-items: center;
+    padding: 0.625rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .time-css p {
+    font-size: 0.875rem;
+  }
+
+  .home-css p {
+    font-size: 1rem;
+  }
+}
+
+/* Additional zoom-friendly styles */
+@media screen and (min-width: 1400px) {
+  .time-css {
+    width: 400px;
+  }
+}
+
+/* Ensure content doesn't overlap with footer */
+@media screen and (max-height: 600px) {
+  .home-css {
+    min-height: calc(100vh - 60px);
+  }
+}
